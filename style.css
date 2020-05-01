@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /* font-family: 'Poppins',sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+
+
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight:900;
+    font-style:italic;
+}
+
+
+.navbar {
+    padding: .8rem;
+}
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1em !important;
+}
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight:900;
+    font-style:italic;
+    font-size: 500%;
+    text-shadow: 1px 1px 10px #222;
+}
+
+.carousel-caption h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 200%;
+    text-shadow: 1px 1px 5px #222;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.jumbotron .typewrite {
+    color: #b4b4b4;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+.resume-btn-holder, .typewrite-holder {
+    text-align: center;
+}
+
+.padding {
+    padding-bottom: 2rem;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #2163af;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+.timeline .schoolname {
+    color: #2163af;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.fa-html5{
+    color: #e54d26;
+}
+
+.fa-bold{
+    color: #563d7c;
+}
+
+.fa-css3{
+    color: #2163af;
+}
+
+.fa-python{
+    color: #4b8bbe;
+}
+
+.fa-java{
+    color: #f89820;
+}
+
+.fa-js{
+    color: #f0db4f;
+}
+
+.fa-code{
+    color: #274773;
+}
+
+.fa-android{
+    color: #a4c639;
+}
+
+
+.fa-database{
+    color: #00758F;
+}
+
+
+.fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database{
+    font-size: 4em;
+    margin: 1rem;
+}
+
+.gif {
+    max-width: 100%;
+}
+
+
+.social a {
+    font-size: 2em;
+    padding: 1rem;
+    color: black;
+}
+
+.fa-weibo:hover {
+    color: #df2029;
+}
+
+.fa-linkedin:hover {
+    color: #0e76a8;
+}
+
+.fa-github:hover {
+    color: #6e5494;
+}
+
+.fa-instagram:hover {
+    color: #517fa4;
+}
+
+#footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight:900;
+    font-style:italic;
+}
+
+#fixed-text {
+    font-family: 'Zhi Mang Xing', cursive;
+    color: black;
+}
+#fixed {
+    text-align: center;
+}
+
+
+
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+
+    .carousel-caption {
+        top: 40%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 200%
+    }
+    
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .3rem;
+        
+    }
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 8px 14px;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+  
+}
+@media (max-width: 576px) {
+    .carousel-caption {
+        top: 40%;
+    }
+    
+    .carousel-caption h1 {
+        font-size: 180%
+    }
+    
+    .carousel-caption h3 {
+        font-size: 120%;
+        font-weight: 400;
+        padding-bottom: .3rem;
+        
+    }
+    .carousel-caption .btn {
+        font-size: 80%;
+        padding: 4px 8px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+    .fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database{
+        font-size: 2em;
+        margin: 0.5rem;
+    }
+
+    .tech-stacks h3 {
+        font-size: 1rem;
+    }
+  
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+footer {
+    background-color: #3f3f3f;
+    color: #d5d5d5;
+    padding-top: 2rem;
+}
+
+hr.light {
+    border-top: 1px solid #d5d5d5;
+    width: 75%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
