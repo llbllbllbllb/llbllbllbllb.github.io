@@ -58,7 +58,10 @@ html, body{
 }
 
 
-
+.timeline-holder {
+    display: flex;
+    align-items: center;
+}
 
 
 .jumbotron {
@@ -190,7 +193,7 @@ ul.timeline > li:before {
     color: #0e76a8;
 }
 
-.fa-github:hover {
+.github-last:hover {
     color: #6e5494;
 }
 
