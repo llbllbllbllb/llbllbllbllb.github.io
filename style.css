@@ -36,6 +36,10 @@ html, body{
     
 }
 
+.circle-icon-holder {
+    overflow: hidden;
+}
+
 #big-background-container {
     position: relative;
     height: 30rem;
