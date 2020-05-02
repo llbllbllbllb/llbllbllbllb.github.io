@@ -38,7 +38,7 @@ html, body{
 
 .circle-icon-holder {
     display: flex;
-    flex-direction: column; /*added*/
+    flex-direction: column;
 }
 
 #big-background-container {
