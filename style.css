@@ -79,8 +79,9 @@ html, body{
     height: 20rem;
     width: 20rem;
     background-color: #dfe9fb;
+    margin: 1rem;
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
   }
 
 
@@ -285,6 +286,10 @@ ul.timeline > li:before {
     color: white;
 }
 
+.workouttmrw {
+    font-family: 'Noto Serif SC', serif;
+}
+
 
 
 
@@ -397,8 +402,8 @@ figure {
 }
 
 footer {
-    background-color: #3f3f3f;
-    color: #d5d5d5;
+    background-color: #dfe9fb;
+    color: black;
     padding-top: 2rem;
 }
 
