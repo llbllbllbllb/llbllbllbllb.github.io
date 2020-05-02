@@ -50,105 +50,101 @@
             </div>
         </nav>
 
+        <!-- two column section -->
+        <div class="container-fluid padding" id="big-background-container">
+            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 typewrite-holder" id="text-main-content">
+                <h4 id="hiiam">Hi, I am</h4>
+                <h1>Libang Liang</h1>
+                <h4>
+                    <a href="" class="typewrite" data-period="2000" data-type='["I am a Software Engineer.","I am a Designer." ]'>
+                      <span class="wrap"></span>
+                    </a>
+                </h4>
+                <a href="LibangLiang_Resume.pdf"><button type="button" class="btn btn-outline-secondary resume-btn">Resume</button></a>
 
-        <!-- image slider -->
-        <div id="slides" class="carousel slide" data-ride="carousel">
-            <ul class="carousel-indicators">
-                <li data-target="#slides" data-slide_to="0" class="active"></li>
-            </ul>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/img/background.png">
-                    <div class="carousel-caption">
-                        <h1 class="display-2">Photo Archive I</h1>
-                        <h3>England</h3>
-                        <a href="https://www.bilibili.com/video/BV1ai4y187Jk/"><button type="button" class="shadow btn btn-outline-light btn-lg">Watch Video</button></a>
+                <script>
+                    var TxtType = function(el, toRotate, period) {
+                        this.toRotate = toRotate;
+                        this.el = el;
+                        this.loopNum = 0;
+                        this.period = parseInt(period, 10) || 2000;
+                        this.txt = '';
+                        this.tick();
+                        this.isDeleting = false;
+                    };
+
+                    TxtType.prototype.tick = function() {
+                        var i = this.loopNum % this.toRotate.length;
+                        var fullTxt = this.toRotate[i];
+
+                        if (this.isDeleting) {
+                        this.txt = fullTxt.substring(0, this.txt.length - 1);
+                        } else {
+                        this.txt = fullTxt.substring(0, this.txt.length + 1);
+                        }
+
+                        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+                        var that = this;
+                        var delta = 200 - Math.random() * 100;
+
+                        if (this.isDeleting) { delta /= 2; }
+
+                        if (!this.isDeleting && this.txt === fullTxt) {
+                        delta = this.period;
+                        this.isDeleting = true;
+                        } else if (this.isDeleting && this.txt === '') {
+                        this.isDeleting = false;
+                        this.loopNum++;
+                        delta = 500;
+                        }
+
+                        setTimeout(function() {
+                        that.tick();
+                        }, delta);
+                    };
+
+                    window.onload = function() {
+                        var elements = document.getElementsByClassName('typewrite');
+                        for (var i=0; i<elements.length; i++) {
+                            var toRotate = elements[i].getAttribute('data-type');
+                            var period = elements[i].getAttribute('data-period');
+                            if (toRotate) {
+                            new TxtType(elements[i], JSON.parse(toRotate), period);
+                            }
+                        }
+                        // INJECT CSS
+                        var css = document.createElement("style");
+                        css.type = "text/css";
+                        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+                        document.body.appendChild(css);
+                    };
+                </script>
+
+            </div>
+
+            <div id="big-background">
+                <div class="row padding">
+                    <div class="col-4 col-lg-3 color-holder">
                         
                     </div>
+    
+                    <div class="col-8 col-lg-9 circle-icon-holder">
+                        <span class="circle-icon"></span>
+    
+                    </div>
                 </div>
+
             </div>
+
         </div>
+
+
 
         <!-- about -->
 
 
-        <!-- jumbotron -->
-        <div class="container-fluid">
-            <div class="row jumbotron">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 typewrite-holder">
-                    <h4>
-                        <a href="" class="typewrite" data-period="2000" data-type='[ "I am Libang Liang.", "A Software Engineer.","A Designer." ]'>
-                          <span class="wrap"></span>
-                        </a>
-                    </h4>
-
-                    <script>
-                        var TxtType = function(el, toRotate, period) {
-                            this.toRotate = toRotate;
-                            this.el = el;
-                            this.loopNum = 0;
-                            this.period = parseInt(period, 10) || 2000;
-                            this.txt = '';
-                            this.tick();
-                            this.isDeleting = false;
-                        };
-
-                        TxtType.prototype.tick = function() {
-                            var i = this.loopNum % this.toRotate.length;
-                            var fullTxt = this.toRotate[i];
-
-                            if (this.isDeleting) {
-                            this.txt = fullTxt.substring(0, this.txt.length - 1);
-                            } else {
-                            this.txt = fullTxt.substring(0, this.txt.length + 1);
-                            }
-
-                            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-                            var that = this;
-                            var delta = 200 - Math.random() * 100;
-
-                            if (this.isDeleting) { delta /= 2; }
-
-                            if (!this.isDeleting && this.txt === fullTxt) {
-                            delta = this.period;
-                            this.isDeleting = true;
-                            } else if (this.isDeleting && this.txt === '') {
-                            this.isDeleting = false;
-                            this.loopNum++;
-                            delta = 500;
-                            }
-
-                            setTimeout(function() {
-                            that.tick();
-                            }, delta);
-                        };
-
-                        window.onload = function() {
-                            var elements = document.getElementsByClassName('typewrite');
-                            for (var i=0; i<elements.length; i++) {
-                                var toRotate = elements[i].getAttribute('data-type');
-                                var period = elements[i].getAttribute('data-period');
-                                if (toRotate) {
-                                new TxtType(elements[i], JSON.parse(toRotate), period);
-                                }
-                            }
-                            // INJECT CSS
-                            var css = document.createElement("style");
-                            css.type = "text/css";
-                            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-                            document.body.appendChild(css);
-                        };
-                    </script>
-
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 resume-btn-holder">
-                    <a href="LibangLiang_Resume.pdf"><button type="button" class="btn btn-outline-secondary">Resume</button></a>
-                </div>
-
-            </div>
-        </div>
 
 
         <!-- welcome section -->
