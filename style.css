@@ -369,7 +369,7 @@ ul.timeline > li:before {
     .display-4 {
         font-size: 160%;
     }
-    .fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database{
+    .fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database, .fa-react{
         font-size: 2em;
         margin: 0.5rem;
     }
