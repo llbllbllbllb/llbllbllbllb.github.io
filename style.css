@@ -222,8 +222,26 @@ ul.timeline > li:before {
     color: #00758F;
 }
 
+.fa-react {
+    color: #00d8ff;
+}
 
-.fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database{
+@media (prefers-reduced-motion: no-preference) {
+    .fa-react {
+      animation: React-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes React-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database, .fa-react{
     font-size: 4em;
     margin: 1rem;
 }
