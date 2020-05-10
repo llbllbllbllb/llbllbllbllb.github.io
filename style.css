@@ -340,6 +340,10 @@ ul.timeline > li:before {
     .display-4 {
         font-size: 200%;
     }
+
+    .workouttmrw {
+        font-size: 2rem;
+    }
   
 }
 @media (max-width: 576px) {
@@ -375,6 +379,10 @@ ul.timeline > li:before {
     }
 
     .tech-stacks h3 {
+        font-size: 1rem;
+    }
+    
+    .workouttmrw {
         font-size: 1rem;
     }
   
