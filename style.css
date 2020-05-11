@@ -385,6 +385,10 @@ ul.timeline > li:before {
     .workouttmrw {
         font-size: 1rem;
     }
+
+    .photo-archive-background {
+        margin-left: -60rem;
+    }
   
 }
 
