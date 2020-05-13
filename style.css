@@ -308,8 +308,31 @@ ul.timeline > li:before {
     font-family: 'Noto Serif SC', serif;
 }
 
+.img-overlay-wrap {
+    position: relative;
+    display: inline-block; /* <= shrinks container to image size */
+}
+  
+  
+.img-overlay-wrap svg {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}
+@media (prefers-reduced-motion: no-preference) {
+    .img-overlay-wrap svg {
+      animation: book-keeper-logo-spin infinite 5s linear;
+    }
+}
 
-
+@keyframes book-keeper-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 
 /*---Media Queries --*/
