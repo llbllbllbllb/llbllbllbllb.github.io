@@ -226,6 +226,10 @@ ul.timeline > li:before {
     color: #00d8ff;
 }
 
+.fa-sketch {
+    color: rgb(251, 172, 41);
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .fa-react {
       animation: React-logo-spin infinite 20s linear;
@@ -241,7 +245,7 @@ ul.timeline > li:before {
     }
 }
 
-.fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database, .fa-react{
+.tech-stacks i{
     font-size: 4em;
     margin: 1rem;
 }
@@ -272,6 +276,8 @@ ul.timeline > li:before {
 .fa-instagram:hover {
     color: #517fa4;
 }
+
+
 
 #footer-brand {
     font-family: 'Playfair Display', serif;
@@ -396,7 +402,7 @@ ul.timeline > li:before {
     .display-4 {
         font-size: 160%;
     }
-    .fa-html5, .fa-bold, .fa-css3, .fa-python, .fa-java, .fa-js, .fa-code, .fa-android, .fa-database, .fa-react{
+    .tech-stacks i{
         font-size: 2em;
         margin: 0.5rem;
     }
