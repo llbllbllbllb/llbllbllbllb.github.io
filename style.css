@@ -236,7 +236,7 @@ ul.timeline > li:before {
 
 @media (prefers-reduced-motion: no-preference) {
     .fa-react {
-      animation: React-logo-spin infinite 20s linear;
+      animation: React-logo-spin infinite 10s linear;
     }
 }
 
