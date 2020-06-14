@@ -230,6 +230,10 @@ ul.timeline > li:before {
     color: rgb(251, 172, 41);
 }
 
+.fa-node-js{
+    color: rgb(66, 129, 67);
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .fa-react {
       animation: React-logo-spin infinite 20s linear;
