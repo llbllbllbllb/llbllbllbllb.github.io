@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
 
-
 html, body{
     height: 100%;
     width: 100%;
@@ -320,7 +319,11 @@ ul.timeline > li:before {
 
 .img-overlay-wrap {
     position: relative;
-    display: inline-block; /* <= shrinks container to image size */
+    display: inline-block;
+    
+}
+.leto_card {
+    text-align: center;
 }
   
   
@@ -328,6 +331,22 @@ ul.timeline > li:before {
     position: absolute;
     top: calc(50% - 50px);
     left: calc(50% - 50px);
+}
+
+.img-overlay-wrap h1{
+    position: absolute;
+    /* height: 30px; */
+    line-height:200px;
+    width:100%;
+    /* width: 150px; */
+    /* top: calc(50% - 15px); */
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.5rem;
+    color: white;
+}
+.leto_banner {
+    
 }
 @media (prefers-reduced-motion: no-preference) {
     .img-overlay-wrap svg {
