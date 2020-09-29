@@ -125,6 +125,8 @@
 
             </div>
 
+
+
             <div id="big-background">
                 <div class="row padding">
                     <div class="col-4 col-lg-3 color-holder">
@@ -142,6 +144,43 @@
 
             </div>
 
+        </div>
+
+        <div class="leetcode_banner">
+            <div class="rect_part_before"></div>
+            <p id="leetcode_text"><b>LEETCODE400+</b>  &nbsp&nbsp&nbsp I have finished over 400 leetcode problems ;-)</p>
+            <div class="rect_part_after"></div>
+            <script>
+                
+                function add_one_rect(container){
+                    container[0].innerHTML = "";
+                    var j_lim = window.innerWidth/15;
+                    for(let i = 0; i<1; i++){
+                        let rect_col = document.createElement("div");
+                        rect_col.classList.add("rect_col");
+                        for(let j = 0; j< j_lim; j++){
+                            var rect = document.createElement("div");
+                            rect.classList.add("rect");
+                            let color = Math.floor(Math.random() * 4);
+                            rect.classList.add("rect_color_"+color);
+                            rect_col.appendChild(rect);
+                            console.log("hi");
+                            
+                        }
+                        container[0].appendChild(rect_col);
+                        
+                    }
+                }
+                function add_rect(){
+                    add_one_rect(document.getElementsByClassName("rect_part_before"));
+                    add_one_rect(document.getElementsByClassName("rect_part_after"));
+                }
+                add_rect();
+                window.onresize = function(event) {
+                    add_rect();
+                };
+
+            </script>
         </div>
 
 

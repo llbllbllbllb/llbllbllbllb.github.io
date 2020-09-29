@@ -67,10 +67,58 @@ html, body{
     margin-top: 1rem;
 }
 
+
+.rect {
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    background-color: #d4d9df;
+}
+
+.rect_color_1 {
+    background-color: #dce190;
+}
+.rect_color_2 {
+    background-color: #9dc070;
+}
+.rect_color_3 {
+    background-color: #669d4d;
+}
+
+.rect_col {
+    display: flex;
+    margin-top: 3px;
+}
+
+
+.rect_part {
+    
+    
+}
+
 #hiiam {
     margin: 0;
     color: #157FFB;
 }
+
+.leetcode_banner {
+    background-color: rgb(245,245,245);
+    color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+#leetcode_text {
+    top: 0;
+    border-radius: 100px;
+    width: fit-content;
+    background-color: rgb(245,245,245);
+    padding: .5rem;
+    margin: auto;
+
+    
+}
+
 
 
 .circle-icon {
@@ -402,6 +450,10 @@ ul.timeline > li:before {
     .carousel-caption {
         top: 40%;
     }
+
+    #leetcode_text {
+        font-size: x-small;
+    }
     
     .carousel-caption h1 {
         font-size: 180%
@@ -502,6 +554,7 @@ hr.light {
     padding: 1rem;
 
 }
+
 
 
 
