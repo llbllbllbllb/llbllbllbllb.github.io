@@ -155,10 +155,10 @@
             <div class="rect_part_after"></div>
             <script>
                 
-                function add_one_rect(container){
+                function add_one_rect(container,line_num){
                     container[0].innerHTML = "";
                     var j_lim = window.innerWidth/15;
-                    for(let i = 0; i<1; i++){
+                    for(let i = 0; i<line_num; i++){
                         let rect_col = document.createElement("div");
                         rect_col.classList.add("rect_col");
                         for(let j = 0; j< j_lim; j++){
@@ -175,8 +175,8 @@
                     }
                 }
                 function add_rect(){
-                    add_one_rect(document.getElementsByClassName("rect_part_before"));
-                    add_one_rect(document.getElementsByClassName("rect_part_after"));
+                    
+                    add_one_rect(document.getElementsByClassName("rect_part_after"),3);
                 }
                 add_rect();
                 window.onresize = function(event) {

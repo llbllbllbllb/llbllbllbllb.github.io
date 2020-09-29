@@ -119,8 +119,8 @@ html, body{
     margin: auto;
 }
 .leetcode_text_container {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    padding-top: .8rem;
+    padding-bottom: .5rem;
 }
 
 
